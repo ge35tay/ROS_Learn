@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/yinghanhuang/TUM/ROS_learn/URDF_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yinghanhuang/TUM/ROS_learn/URDF_ws/install -G Unix Makefiles

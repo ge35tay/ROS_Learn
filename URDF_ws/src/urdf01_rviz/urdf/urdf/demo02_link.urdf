@@ -1,0 +1,30 @@
+<!-- design different shapes of robots-->
+
+<robot name= "mycar">
+    <link name="base_link">
+        <visual>
+            <!-- shape -->
+            <geometry>
+                <!--1. cube-->
+                <!--box size ="0.3 0.2 0.1"/-->
+                <!--2. cylinder-->
+                <!--cylinder radius="0.1" length = 2 -->
+                <!--3. sphere-->
+                <!--sphere radius="1"/>
+                <! skin-->
+                <mesh filename="package://urdf01_rviz/meshes/autolabor_mini.stl"/>
+            <!-- translation-->
+            <!-- rad -->
+            </geometry>
+            <!-- translation-->
+            <!-- xyz rpy-->
+             <origin xyz = "0 0 0" rpy="1.57 0 1.57"/>
+
+             <!-- 3color rgba value all between 0-1-->
+             <material name="car_color">
+                <color rgba = "0 0 1 1"/>
+            </material>
+
+        </visual>
+    </link>
+</robot>

@@ -1,0 +1,2 @@
+tf01_static:tf02_dynamic:tf03_tfs
+-DCATKIN_DEVEL_PREFIX=/home/yinghanhuang/TUM/ROS_learn/TF_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yinghanhuang/TUM/ROS_learn/TF_ws/install -G Unix Makefiles
