@@ -1,0 +1,10 @@
+<launch>
+    <!-- 1. put urdf in param server-->
+    <param name="robot_description" command="$(find xacro)/xacro $(find urdf02_gazebo)/urdf/xacro/car.urdf.xacro"/>
+    <!-- gazebo-->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find urdf02_gazebo)/worlds/box_house.world"/>
+    </include>
+    <!-- add robot in gazebo-->
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_model"  args="-urdf -mode car -param robot_description"/>
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+    
+    <!-- launch rviz-->
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find urdf01_rviz)/config/show_mycar_test.rviz"/>
+    <!--add joint and robot publisher-->
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+
+</launch>
