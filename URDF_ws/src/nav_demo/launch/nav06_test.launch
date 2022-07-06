@@ -1,0 +1,14 @@
+<!-- relative to launch file-->
+<launch>
+    <!--mapper service-->
+    <include file="$(find nav_demo)/launch/nav03_map_server.launch"/>
+    <!--amcl-->
+    <include file="$(find nav_demo)/launch/nav04_amcl.launch"/>
+    <!--move base-->
+    <include file="$(find nav_demo)/launch/nav05_path.launch"/>
+    <!--rviz-->
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher"/>
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher"/>
+    <node pkg="rviz" name="rviz" type="rviz"/>
+
+</launch>

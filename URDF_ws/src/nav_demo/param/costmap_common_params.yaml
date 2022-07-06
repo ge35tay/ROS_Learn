@@ -1,0 +1,15 @@
+#robot geometry parameter，if robot in round shape，set robot_radius,else if ohter shape set footprint
+robot_radius: 0.12 #round
+# footprint: [[-0.12, -0.12], [-0.12, 0.12], [0.12, 0.12], [0.12, -0.12]] #other shape
+obstacle_range: 3.0 # for detecting obstacle，like:3.0， means when detects obstacle in less than 3 meters, then note in cost map
+raytrace_range: 3.5 # for clearing obstacle in cost map, like 3.5，means that clear the obstacle in the cost map, which is further than 3.5 meters
+#inflation radius，expand the cost area outside the collision area, for avoiding obstacle when planning path
+inflation_radius: 0.5
+#the bigger, the smaller is the cost value
+cost_scaling_factor: 3.0
+#map type
+map_type: costmap
+#the needed sensor in mapping
+observation_sources: scan
+#set the coordinate and paramter of sensors
+scan: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}

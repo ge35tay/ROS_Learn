@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/yinghanhuang/TUM/ROS_learn/URDF_ws'
+make: Leaving directory '/home/yinghanhuang/TUM/ROS_learn/URDF_ws'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

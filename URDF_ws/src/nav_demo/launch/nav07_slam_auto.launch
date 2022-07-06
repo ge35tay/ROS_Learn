@@ -1,0 +1,7 @@
+<!-- slam and navigation-->
+<launch>
+    <!--salm-->
+    <include file="$(find nav_demo)/launch/nav01_slam.launch"/>
+    <!--move base in navigation-->
+    <include file="$(find nav_demo)/launch/nav05_path.launch"/>
+</launch>

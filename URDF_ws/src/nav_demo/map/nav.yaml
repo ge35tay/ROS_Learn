@@ -1,0 +1,17 @@
+# image path
+image: /home/yinghanhuang/TUM/ROS_learn/URDF_ws/src/nav_demo/map/nav.pgm
+# meter / pixel i pixel = 5 cm in real world
+resolution: 0.050000
+# map pose
+origin: [-50.000000, -50.000000, 0.000000]
+# use following 2 tp tell if this part is occupied 
+# white -safr part
+# black - obstacle
+# blue-gray - unknown part
+# rule: calculate p according to the pixel value p = (255- x)/255 white 0, black 1 gray 0 -1 
+# when p > occupied_thresh obstacle
+# when p < free_thresh free
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

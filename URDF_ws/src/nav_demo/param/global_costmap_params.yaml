@@ -1,0 +1,10 @@
+global_costmap:
+  global_frame: map #map frame
+  robot_base_frame: base_footprint #robot frame
+  # for frame translation
+  inflation_radius: 0.5
+  cost_scaling_factor: 10.0
+  update_frequency: 1.0 #update frequency of cost map
+  publish_frequency: 1.0 #publish frequency of cost map
+  transform_tolerance: 0.5 # maximum waiting time of the published coordinate translation
+  static_map: true # to use the static map as initial cost map or not
